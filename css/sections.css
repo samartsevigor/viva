@@ -34,7 +34,7 @@
   display: flex;
   align-items: center;
   min-height: calc(100vh - var(--header-height));
-  padding: var(--space-16) 0;
+  padding-block: var(--space-16);
 }
 
 .hero__text {
@@ -117,19 +117,39 @@
     left: 50%;
     top: 52%;
     transform: translate(-50%, -50%);
-    width: min(620px, 150vw);
+    width: min(620px, 100vw);
     height: min(620px, 70vh);
     opacity: 0.5;
   }
 
   .hero__text::before {
-    inset: -32px -40px -32px -32px;
+    inset: -32px -24px -32px -24px;
     background: radial-gradient(
       ellipse 90% 80% at 50% 50%,
       rgba(5, 8, 22, 0.95) 0%,
       rgba(5, 8, 22, 0.75) 50%,
       transparent 85%
     );
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero__trust {
+    width: 100%;
+  }
+
+  .trust-strip {
+    width: 100%;
+    border-radius: var(--radius-xl);
+    padding-inline: var(--space-5);
   }
 }
 
@@ -538,6 +558,11 @@
   .tech-stack__logo {
     width: 28px;
     height: 28px;
+  }
+
+  .team-swiper {
+    margin-inline: calc(-1 * max(var(--space-8), env(safe-area-inset-left, 0px)));
+    padding-inline: max(var(--space-8), env(safe-area-inset-left, 0px));
   }
 }
 
