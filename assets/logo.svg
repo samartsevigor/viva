@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 56" fill="none" role="img" aria-label="VIVO">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@700&amp;display=swap");
+    .logo-text {
+      font-family: "Outfit", system-ui, sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.28em;
+      fill: #ffffff;
+    }
+  </style>
+
+  <path d="M22 8V20M22 8H42" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="square"/>
+  <path d="M132 48H112M132 48V37" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="square"/>
+
+  <text class="logo-text" x="80" y="36" text-anchor="middle">VIVO</text>
+</svg>

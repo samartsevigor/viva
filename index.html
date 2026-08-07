@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VIVO builds high-converting websites, iOS & Android apps, and practical AI integrations. End-to-end digital product development for startups and growing businesses.">
+  <meta name="keywords" content="web development, mobile app development, AI integration, custom software, software agency, SaaS development">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VIVO — Web Development, Mobile Apps & AI Integrations">
+  <meta property="og:description" content="We ship websites, mobile apps, and AI features that move the needle for your business. Talk to our team on Telegram or WhatsApp.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VIVO — Web Development, Mobile Apps & AI Integrations">
+  <meta name="twitter:description" content="End-to-end digital product development — web, mobile, and AI integrations built for real business outcomes.">
+  <title>VIVO — Web Development, Mobile Apps & AI Integrations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="header__logo" aria-label="VIVO — home">
+        <img src="assets/logo.svg" alt="VIVO — web, mobile and AI development" class="header__logo-img" width="149" height="52">
+      </a>
+
+      <nav class="header__nav" aria-label="Main navigation">
+        <a href="#services" class="header__nav-link">Services</a>
+        <a href="#process" class="header__nav-link">Process</a>
+        <a href="#ai" class="header__nav-link">AI</a>
+        <a href="#portfolio" class="header__nav-link">Work</a>
+        <a href="#team" class="header__nav-link">Team</a>
+        <a href="#contact" class="header__nav-link">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="https://t.me/your_username" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+          </svg>
+          Telegram
+        </a>
+      </div>
+
+      <button class="header__burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="#services" class="mobile-menu__link">Services</a>
+    <a href="#process" class="mobile-menu__link">Process</a>
+    <a href="#ai" class="mobile-menu__link">AI</a>
+    <a href="#portfolio" class="mobile-menu__link">Work</a>
+    <a href="#team" class="mobile-menu__link">Team</a>
+    <a href="#contact" class="mobile-menu__link">Contact</a>
+    <div class="mobile-menu__actions">
+      <a href="https://t.me/your_username" class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">
+        <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+        </svg>
+        Message on Telegram
+      </a>
+      <a href="https://wa.me/70000000000" class="btn btn--secondary btn--lg" target="_blank" rel="noopener noreferrer">
+        <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <div class="grid-mesh"></div>
+        <div class="glow-orb glow-orb--purple hero__orb-1"></div>
+        <div class="glow-orb glow-orb--violet hero__orb-2"></div>
+      </div>
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__canvas-wrap">
+          <canvas id="hero-canvas"></canvas>
+        </div>
+      </div>
+      <div class="container hero__content">
+        <div class="hero__text">
+          <div class="hero__badge">
+            <span class="badge">Full-cycle digital product studio</span>
+          </div>
+          <h1 class="hero__title">
+            <span>We build websites and</span>
+            <span class="gradient-text">mobile apps</span>
+            <span>that grow your business</span>
+          </h1>
+          <p class="hero__subtitle">
+            VIVO is a global team shipping digital products and AI integrations where they create measurable impact — not buzzwords
+          </p>
+          <div class="hero__actions">
+            <a href="https://t.me/your_username" class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+              </svg>
+              Message on Telegram
+            </a>
+            <a href="https://wa.me/70000000000" class="btn btn--secondary btn--lg" target="_blank" rel="noopener noreferrer">
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              WhatsApp
+            </a>
+          </div>
+          <div class="hero__trust">
+            <div class="trust-strip">
+              <span class="trust-strip__item">Web</span>
+              <span class="trust-strip__dot" aria-hidden="true"></span>
+              <span class="trust-strip__item">iOS / Android</span>
+              <span class="trust-strip__dot" aria-hidden="true"></span>
+              <span class="trust-strip__item">AI Integrations</span>
+              <span class="trust-strip__dot" aria-hidden="true"></span>
+              <span class="trust-strip__item">End-to-End</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section section--alt" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Services</span>
+          <h2 class="section-title">What we build</h2>
+          <p class="section-subtitle">Full-cycle development — from discovery and design to launch and ongoing support</p>
+        </div>
+        <div class="services__grid">
+
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <path d="M8 21h8M12 17v4"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Web Development</h3>
+            <p class="card__desc">Fast, modern web experiences built to attract traffic and convert visitors into customers</p>
+            <ul class="card__list">
+              <li class="card__list-item">Corporate websites and landing pages</li>
+              <li class="card__list-item">Web apps and SaaS platforms</li>
+              <li class="card__list-item">E-commerce and online stores</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="5" y="2" width="14" height="20" rx="2"/>
+                <path d="M12 18h.01"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Mobile Apps</h3>
+            <p class="card__desc">Native and cross-platform apps for iOS and Android — polished, performant, and ready to scale</p>
+            <ul class="card__list">
+              <li class="card__list-item">Native iOS and Android development</li>
+              <li class="card__list-item">Cross-platform solutions</li>
+              <li class="card__list-item">UI/UX design and prototyping</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L12 22l-.75-12.07A4.001 4.001 0 0 1 12 2z"/>
+                <path d="M8.5 10.5c-1.5 1.26-2.5 3.15-2.5 5.25a6 6 0 0 0 12 0c0-2.1-1-3.99-2.5-5.25"/>
+              </svg>
+            </div>
+            <h3 class="card__title">AI Integrations</h3>
+            <p class="card__desc">We deploy AI where it saves time, cuts costs, or unlocks new product capabilities</p>
+            <ul class="card__list">
+              <li class="card__list-item">Chatbots and AI assistants</li>
+              <li class="card__list-item">Business process automation</li>
+              <li class="card__list-item">LLM integrations and smart analytics</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="section" id="tech">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Tech Stack</span>
+          <h2 class="section-title">Built with industry-leading tools</h2>
+          <p class="section-subtitle">Modern, battle-tested technologies we use to ship fast and scale with confidence</p>
+        </div>
+      </div>
+      <div class="tech-stack" id="tech-stack" aria-label="Technologies we work with">
+        <div class="tech-stack__fade tech-stack__fade--left" aria-hidden="true"></div>
+        <div class="tech-stack__fade tech-stack__fade--right" aria-hidden="true"></div>
+        <div class="tech-stack__track tech-stack__track--forward"></div>
+        <div class="tech-stack__track tech-stack__track--reverse"></div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Process</span>
+          <h2 class="section-title">How we work</h2>
+          <p class="section-subtitle">A clear, transparent path from your first message to a live product</p>
+        </div>
+        <div class="process__timeline">
+
+          <div class="process__step">
+            <div class="process__number">01</div>
+            <div class="process__content">
+              <h3 class="process__title">Discovery &amp; scope</h3>
+              <p class="process__desc">We kick off on Telegram or WhatsApp, align on goals, audience, timeline, and budget</p>
+            </div>
+          </div>
+
+          <div class="process__step">
+            <div class="process__number">02</div>
+            <div class="process__content">
+              <h3 class="process__title">Design &amp; architecture</h3>
+              <p class="process__desc">We wireframe the experience, define the technical architecture, and lock in milestones</p>
+            </div>
+          </div>
+
+          <div class="process__step">
+            <div class="process__number">03</div>
+            <div class="process__content">
+              <h3 class="process__title">Build &amp; iterate</h3>
+              <p class="process__desc">Weekly demos keep you in the loop — you see real progress, not status reports</p>
+            </div>
+          </div>
+
+          <div class="process__step">
+            <div class="process__number">04</div>
+            <div class="process__content">
+              <h3 class="process__title">Launch &amp; support</h3>
+              <p class="process__desc">We deploy, monitor performance, and stay available for improvements after go-live</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Block -->
+    <section class="section section--alt" id="ai">
+      <div class="container">
+        <div class="ai-block">
+          <div class="ai-block__glow" aria-hidden="true"></div>
+          <div class="ai-block__content">
+            <span class="section-label">AI Integrations</span>
+            <h2 class="ai-block__title">AI for outcomes — <span class="gradient-text">not hype</span></h2>
+            <p class="ai-block__desc">
+              We integrate AI only where it measurably improves your product: automating repetitive work, personalizing user experiences, and turning data into better decisions
+            </p>
+            <div class="ai-block__features">
+              <div class="ai-block__feature">
+                <div class="ai-block__feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                  </svg>
+                </div>
+                <span class="ai-block__feature-text">AI chat assistants for customer support</span>
+              </div>
+              <div class="ai-block__feature">
+                <div class="ai-block__feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                  </svg>
+                </div>
+                <span class="ai-block__feature-text">Workflow and business process automation</span>
+              </div>
+              <div class="ai-block__feature">
+                <div class="ai-block__feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M3 3v18h18"/>
+                    <path d="M7 16l4-4 4 4 5-6"/>
+                  </svg>
+                </div>
+                <span class="ai-block__feature-text">Predictive analytics and intelligent insights</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="section" id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Case Studies</span>
+          <h2 class="section-title">Selected work</h2>
+          <p class="section-subtitle">From high-converting landing pages to full platforms with AI built in</p>
+        </div>
+        <div class="portfolio__grid">
+
+          <article class="portfolio__card">
+            <div class="portfolio__card-media">
+              <img
+                class="portfolio__card-img"
+                src="assets/projects/project-1.png"
+                alt="E-commerce platform redesign by VIVO"
+                loading="lazy"
+              >
+            </div>
+            <div class="portfolio__card-body">
+              <span class="badge portfolio__card-type">Website</span>
+              <h3 class="portfolio__card-title">E-commerce Platform</h3>
+              <p class="portfolio__card-result">+40% conversion after redesign</p>
+            </div>
+          </article>
+
+          <article class="portfolio__card">
+            <div class="portfolio__card-media">
+              <img
+                class="portfolio__card-img"
+                src="assets/projects/project-2.png"
+                alt="Fitness Tracker mobile app by VIVO"
+                loading="lazy"
+              >
+            </div>
+            <div class="portfolio__card-body">
+              <span class="badge portfolio__card-type">Mobile App</span>
+              <h3 class="portfolio__card-title">Fitness Tracker</h3>
+              <p class="portfolio__card-result">Shipped in 6 weeks · iOS + Android</p>
+            </div>
+          </article>
+
+          <article class="portfolio__card">
+            <div class="portfolio__card-media">
+              <img
+                class="portfolio__card-img"
+                src="assets/projects/project-3.png"
+                alt="AI Support Bot integration by VIVO"
+                loading="lazy"
+              >
+            </div>
+            <div class="portfolio__card-body">
+              <span class="badge portfolio__card-type">AI Integration</span>
+              <h3 class="portfolio__card-title">AI Support Bot</h3>
+              <p class="portfolio__card-result">60% less support workload</p>
+            </div>
+          </article>
+
+          <article class="portfolio__card">
+            <div class="portfolio__card-media">
+              <img
+                class="portfolio__card-img"
+                src="assets/projects/project-4.png"
+                alt="Dastorkon — home-cooked food marketplace app"
+                loading="lazy"
+              >
+            </div>
+            <div class="portfolio__card-body">
+              <span class="badge portfolio__card-type">Mobile App</span>
+              <h3 class="portfolio__card-title">Dastorkon</h3>
+              <p class="portfolio__card-result">Home-cooked meals from local chefs · iOS &amp; Android</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us -->
+    <section class="section section--alt" id="why-us">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Why VIVO</span>
+          <h2 class="section-title">We work the way we'd want to be worked with</h2>
+          <p class="section-subtitle">No unnecessary bureaucracy — just clear communication and results that ship</p>
+        </div>
+        <div class="why-us__grid">
+
+          <div class="why-us__item">
+            <div class="why-us__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="why-us__title">Transparent timelines and budget</h3>
+              <p class="why-us__desc">Scope, cost, and deadlines are agreed upfront — no surprise invoices mid-project</p>
+            </div>
+          </div>
+
+          <div class="why-us__item">
+            <div class="why-us__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="why-us__title">Direct access to the team</h3>
+              <p class="why-us__desc">You talk to the people building your product — no layers of account managers or lost context</p>
+            </div>
+          </div>
+
+          <div class="why-us__item">
+            <div class="why-us__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="why-us__title">Modern, scalable stack</h3>
+              <p class="why-us__desc">Current technologies and proven best practices — so your product is built to grow</p>
+            </div>
+          </div>
+
+          <div class="why-us__item">
+            <div class="why-us__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L12 22l-.75-12.07A4.001 4.001 0 0 1 12 2z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="why-us__title">AI where it pays off</h3>
+              <p class="why-us__desc">We don't push AI for the sake of trends — only when it genuinely improves your product</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="section" id="team">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Team</span>
+          <h2 class="section-title">The people behind your product</h2>
+          <p class="section-subtitle">Specialists who take projects from idea to launch</p>
+        </div>
+        <div class="team-swiper swiper">
+          <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+          <article class="team-card">
+            <div class="team-card__photo-wrap">
+              <img
+                class="team-card__photo"
+                src="assets/team/1.jpg"
+                alt="Igor Samartsev — Chief Technical Officer at VIVO"
+                width="400"
+                height="480"
+                loading="lazy"
+              >
+              <span class="team-card__location">
+                <svg class="team-card__location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z"/>
+                  <circle cx="12" cy="10" r="2.5"/>
+                </svg>
+                Toronto, Canada
+              </span>
+            </div>
+            <div class="team-card__info">
+              <h3 class="team-card__name">Igor Samartsev</h3>
+              <p class="team-card__role">Chief Technical Officer</p>
+              <p class="team-card__bio">Technical strategy, product architecture, and engineering leadership</p>
+            </div>
+          </article>
+          </div>
+
+          <div class="swiper-slide">
+          <article class="team-card">
+            <div class="team-card__photo-wrap">
+              <img
+                class="team-card__photo"
+                src="assets/team/2.jpg"
+                alt="Adyl Inamzhanov — Chief Executive Officer at VIVO"
+                width="400"
+                height="480"
+                loading="lazy"
+              >
+              <span class="team-card__location">
+                <svg class="team-card__location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z"/>
+                  <circle cx="12" cy="10" r="2.5"/>
+                </svg>
+                New York, USA
+              </span>
+            </div>
+            <div class="team-card__info">
+              <h3 class="team-card__name">Adyl Inamzhanov</h3>
+              <p class="team-card__role">Chief Executive Officer</p>
+              <p class="team-card__bio">Company strategy, business development, and client partnerships</p>
+            </div>
+          </article>
+          </div>
+
+          <div class="swiper-slide">
+          <article class="team-card">
+            <div class="team-card__photo-wrap">
+              <img
+                class="team-card__photo"
+                src="assets/team/4.jpg"
+                alt="Dmitry Zhuravlev — Frontend and Mobile Developer at VIVO"
+                width="400"
+                height="480"
+                loading="lazy"
+              >
+              <span class="team-card__location">
+                <svg class="team-card__location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z"/>
+                  <circle cx="12" cy="10" r="2.5"/>
+                </svg>
+                Dubai, UAE
+              </span>
+            </div>
+            <div class="team-card__info">
+              <h3 class="team-card__name">Dmitry Zhuravlev</h3>
+              <p class="team-card__role">Frontend &amp; Mobile Developer</p>
+              <p class="team-card__bio">Web interfaces and mobile apps for iOS and Android</p>
+            </div>
+          </article>
+          </div>
+
+          <div class="swiper-slide">
+          <article class="team-card">
+            <div class="team-card__photo-wrap">
+              <img
+                class="team-card__photo"
+                src="assets/team/6.PNG"
+                alt="Zharkynai Arstanbekova — Designer at VIVO"
+                width="400"
+                height="480"
+                loading="lazy"
+              >
+              <span class="team-card__location">
+                <svg class="team-card__location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z"/>
+                  <circle cx="12" cy="10" r="2.5"/>
+                </svg>
+                Dubai, UAE
+              </span>
+            </div>
+            <div class="team-card__info">
+              <h3 class="team-card__name">Zharkynai Arstanbekova</h3>
+              <p class="team-card__role">Designer</p>
+              <p class="team-card__bio">UI/UX design, visual systems, and interface prototyping</p>
+            </div>
+          </article>
+          </div>
+
+          <div class="swiper-slide">
+          <article class="team-card">
+            <div class="team-card__photo-wrap">
+              <img
+                class="team-card__photo"
+                src="assets/team/5.jpg"
+                alt="Medet Kazizov — Fullstack Developer at VIVO"
+                width="400"
+                height="480"
+                loading="lazy"
+              >
+              <span class="team-card__location">
+                <svg class="team-card__location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z"/>
+                  <circle cx="12" cy="10" r="2.5"/>
+                </svg>
+                Dubai, UAE
+              </span>
+            </div>
+            <div class="team-card__info">
+              <h3 class="team-card__name">Medet Kazizov</h3>
+              <p class="team-card__role">Fullstack Developer</p>
+              <p class="team-card__bio">End-to-end web development across frontend, backend, and product delivery</p>
+            </div>
+          </article>
+          </div>
+
+          <div class="swiper-slide">
+          <article class="team-card">
+            <div class="team-card__photo-wrap">
+              <img
+                class="team-card__photo"
+                src="assets/team/7.jpg"
+                alt="Azamat Zhamakeev — Fullstack Developer at VIVO"
+                width="400"
+                height="480"
+                loading="lazy"
+              >
+              <span class="team-card__location">
+                <svg class="team-card__location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z"/>
+                  <circle cx="12" cy="10" r="2.5"/>
+                </svg>
+                Chicago, USA
+              </span>
+            </div>
+            <div class="team-card__info">
+              <h3 class="team-card__name">Azamat Zhamakeev</h3>
+              <p class="team-card__role">Fullstack Developer</p>
+              <p class="team-card__bio">Full-cycle product development — from UI to APIs and deployment</p>
+            </div>
+          </article>
+          </div>
+
+          <div class="swiper-slide">
+          <article class="team-card">
+            <div class="team-card__photo-wrap">
+              <img
+                class="team-card__photo"
+                src="assets/team/3.PNG"
+                alt="Nikita — AI and Backend Engineer at VIVO"
+                width="400"
+                height="480"
+                loading="lazy"
+              >
+              <span class="team-card__location">
+                <svg class="team-card__location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z"/>
+                  <circle cx="12" cy="10" r="2.5"/>
+                </svg>
+                Fredericton, Canada
+              </span>
+            </div>
+            <div class="team-card__info">
+              <h3 class="team-card__name">Nikita</h3>
+              <p class="team-card__role">AI &amp; Backend Engineer</p>
+              <p class="team-card__bio">Backend, APIs, LLM integration, and business process automation</p>
+            </div>
+          </article>
+          </div>
+
+          </div>
+          <div class="team-swiper__nav">
+            <button class="team-swiper__btn team-swiper__btn--prev" type="button" aria-label="Previous team member">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M15 18l-6-6 6-6"/>
+              </svg>
+            </button>
+            <button class="team-swiper__btn team-swiper__btn--next" type="button" aria-label="Next team member">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 18l6-6-6-6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section" id="contact">
+      <div class="container">
+        <div class="cta-section__inner">
+          <div class="cta-section__glow" aria-hidden="true"></div>
+          <h2 class="cta-section__title">Ready to talk about your project?</h2>
+          <p class="cta-section__subtitle">Send us a message — we reply within an hour during business hours</p>
+          <div class="cta-section__actions">
+            <a href="https://t.me/your_username" class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+              </svg>
+              Message on Telegram
+            </a>
+            <a href="https://wa.me/70000000000" class="btn btn--secondary btn--lg" target="_blank" rel="noopener noreferrer">
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              WhatsApp
+            </a>
+          </div>
+          <p class="cta-section__email">Or email us at <a href="mailto:vivaglobeinc@gmail.com">vivaglobeinc@gmail.com</a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/logo.svg" alt="VIVO" class="footer__logo-img" width="137" height="48">
+          <p class="footer__brand-desc">End-to-end web development, mobile apps, and AI integrations</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Navigation</h4>
+          <nav class="footer__links" aria-label="Footer navigation">
+            <a href="#services" class="footer__link">Services</a>
+            <a href="#process" class="footer__link">Process</a>
+            <a href="#ai" class="footer__link">AI</a>
+            <a href="#portfolio" class="footer__link">Work</a>
+            <a href="#team" class="footer__link">Team</a>
+            <a href="#contact" class="footer__link">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer__heading">Get in touch</h4>
+          <div class="footer__social">
+            <a href="https://t.me/your_username" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/70000000000" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 VIVO. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="js/tech-stack.js"></script>
+  <script src="js/team-swiper.js"></script>
+  <script src="js/hero-sphere.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
